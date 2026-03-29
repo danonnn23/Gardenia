@@ -9,7 +9,7 @@ import Home from './pages/Home'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />, // App буде нашою "оболонкою" з меню
+    element: <App />,
     children: [
       {
         path: "/",
