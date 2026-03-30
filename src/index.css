@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-great-vibes: "Great Vibes", sans-serif;
+}
+
+#root {
+    background-color: #b4c6ae;
+    min-height: 100vh;
+}
