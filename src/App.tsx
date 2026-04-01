@@ -10,12 +10,14 @@ function App() {
 
   const toggleNav = () => setIsNavOpened(!isNavOpened);
 
+  const closeNav = () => setIsNavOpened(false);
+
   return (
     <>
       <Header onBurgerClick={toggleNav} isOpen={isNavOpened}/>
       <main>
         {isNavOpened ? (
-          <NavBar />
+          <NavBar onNavLinkClick={closeNav} />
           ) : (
           <Routes>
             <Route path='/' element={<Home />}/>
